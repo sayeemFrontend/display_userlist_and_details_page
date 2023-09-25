@@ -1,7 +1,8 @@
+import React from 'react';
 import { Outlet, Route, Routes } from 'react-router-dom';
 import Layout from '../layout';
 import Home from '../pages/home';
-import UserDetails from '../pages/user-details';
+const UserDetails = React.lazy(() => import('../pages/user-details'));
 import NotFound from './NotFound';
 
 export default function RootElement() {

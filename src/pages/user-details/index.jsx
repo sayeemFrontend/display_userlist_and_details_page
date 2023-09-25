@@ -21,7 +21,7 @@ export default function UserDetails() {
       <Suspender isError={isError} isLoading={isLoading} preRender={false}>
         <div className='min-h-screen list-none flex flex-wrap flex-row items-center justify-center gap-24 shadow-2xl p-12'>
           <div className='text-center lg:text-start'>
-            <img src={user.image || userIcon} alt='user_png' className=' rounded-full w-[320px] h-auto m-auto' />
+            <img src={user.image || userIcon} alt='user_png' width={320} height={320} className=' rounded-full m-auto' />
             <hgroup className='leading-4 mt-4 text-center'>
               <h2 className='text-primary-950 text-4xl'>{user.name}</h2>
               <h5>({user.username})</h5>
